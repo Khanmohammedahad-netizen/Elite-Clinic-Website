@@ -93,9 +93,12 @@ export default function Footer() {
                 <Phone className="text-[#008B8B] shrink-0" size={16} />
                 <span className="text-[14px] text-[#9A9A9A]">+91 91004 04352</span>
               </li>
-              <li className="flex items-center gap-3">
-                <Clock className="text-[#008B8B] shrink-0" size={16} />
-                <span className="text-[14px] text-[#9A9A9A]">Open Every Day: 8AM – 9:30PM</span>
+              <li className="flex items-start gap-3">
+                <Clock className="text-[#008B8B] shrink-0 mt-1" size={16} />
+                <div className="text-[14px] text-[#9A9A9A] leading-relaxed">
+                  Mon – Sat: 8:00 AM – 1:30 PM &amp; 6:00 PM – 9:30 PM <br />
+                  <span className="text-[#D40000]">Sunday: Closed</span>
+                </div>
               </li>
             </ul>
           </motion.div>

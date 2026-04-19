@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     question: 'What are the clinic timings?',
-    answer: 'We are open every day from 8:00 AM to 9:30 PM, including Sundays and public holidays.',
+    answer: 'We are open Monday through Saturday in two shifts: 8:00 AM – 1:30 PM and 6:00 PM – 9:30 PM. The clinic is closed on Sundays.',
   },
   {
     question: 'Is cataract surgery performed at the clinic?',

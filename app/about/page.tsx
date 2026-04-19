@@ -83,10 +83,10 @@ export default function AboutPage() {
                 <Clock className="text-[#008B8B]" size={24} />
               </div>
               <h3 className="font-semibold text-[#1A1A1A] mb-4">Working Hours</h3>
-              <p className="text-[#6B7280] text-[15px] leading-relaxed">
-                Mon – Sun: 8:00 AM – 9:30 PM<br />
-                (Open Every Day)
-              </p>
+              <div className="text-[#6B7280] text-[15px] leading-relaxed">
+                Mon – Sat: 8:00 AM – 1:30 PM &amp; 6:00 PM – 9:30 PM <br />
+                <span className="text-[#D40000] font-medium">Sunday: Closed</span>
+              </div>
             </div>
           </div>
         </div>

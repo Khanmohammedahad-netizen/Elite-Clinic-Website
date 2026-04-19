@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     default: 'Elite Plus Medical Centre | Clinic in Banjara Hills, Hyderabad',
     template: '%s | Elite Plus Medical Centre'
   },
-  description: "A dual-specialty clinic in Banjara Hills, Hyderabad, offering expert general medicine, diabetes care, and advanced eye treatments at Pinnacle Eye Care. Open every day 8AM–9:30PM.",
+  description: "A dual-specialty clinic in Banjara Hills, Hyderabad, offering expert general medicine, diabetes care, and advanced eye treatments at Pinnacle Eye Care. Open Mon – Sat: 8:00 AM – 1:30 PM & 6:00 PM – 9:30 PM.",
   keywords: 'Physician Banjara Hills, diabetes treatment Hyderabad, eye clinic Banjara Hills, LASIK surgery Hyderabad, cataract surgeon Hyderabad, Pinnacle Eye Care',
 }
 
@@ -42,7 +42,10 @@ const jsonLd = {
     postalCode: '500034',
     addressCountry: 'IN'
   },
-  openingHours: 'Mo-Su 08:00-21:30',
+  openingHours: [
+    'Mo-Sa 08:00-13:30',
+    'Mo-Sa 18:00-21:30'
+  ],
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',

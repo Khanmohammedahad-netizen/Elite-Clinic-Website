@@ -9,7 +9,7 @@ const STATS = [
   { end: 4.9, suffix: '★', label: 'Google Rating', isFloat: true },
   { end: 61, suffix: '+', label: 'Patient Reviews' },
   { end: 2, suffix: '', label: 'Departments' },
-  { end: 7, suffix: ' Days', label: 'Open Every Week' },
+  { end: 6, suffix: ' Days', label: 'Mon – Sat Schedule' },
 ]
 
 function CountUp({ end, suffix, isFloat = false }: { end: number; suffix: string; isFloat?: boolean }) {

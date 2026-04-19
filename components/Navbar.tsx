@@ -154,8 +154,9 @@ export default function Navbar() {
               Book Appointment →
             </motion.a>
           </nav>
-          <div className="px-6 pb-8 text-[#9A9A9A] text-[12px]">
-            Mon – Sun: 8:00 AM – 9:30 PM · +91 91004 04352
+          <div className="px-6 pb-8 text-[#9A9A9A] text-[12px] leading-relaxed">
+            Mon – Sat: 8:00 AM – 1:30 PM & 6:00 PM – 9:30 PM <br />
+            Sunday: Closed &middot; +91 91004 04352
           </div>
         </motion.div>
       )}
