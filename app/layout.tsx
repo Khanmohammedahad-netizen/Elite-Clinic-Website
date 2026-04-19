@@ -27,6 +27,32 @@ export const metadata: Metadata = {
   },
   description: "A dual-specialty clinic in Banjara Hills, Hyderabad, offering expert general medicine, diabetes care, and advanced eye treatments at Pinnacle Eye Care. Open Mon – Sat: 8:00 AM – 1:30 PM & 6:00 PM – 9:30 PM.",
   keywords: 'Physician Banjara Hills, diabetes treatment Hyderabad, eye clinic Banjara Hills, LASIK surgery Hyderabad, cataract surgeon Hyderabad, Pinnacle Eye Care',
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
+  openGraph: {
+    title: 'Elite Plus Medical Centre',
+    description: 'Expert healthcare in Banjara Hills, Hyderabad. Specialists in General Medicine, Diabetes, and Advanced Eye Care (Pinnacle Eye Care).',
+    url: 'https://elite-plus.com',
+    siteName: 'Elite Plus Medical Centre',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Elite Plus Medical Centre Logo',
+      },
+    ],
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Elite Plus Medical Centre',
+    description: 'Expert healthcare in Banjara Hills, Hyderabad. Specialists in General Medicine, Diabetes, and Advanced Eye Care (Pinnacle Eye Care).',
+    images: ['/og-image.png'],
+  },
 }
 
 const jsonLd = {
