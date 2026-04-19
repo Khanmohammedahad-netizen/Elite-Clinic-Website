@@ -50,7 +50,17 @@ export default function ContactPage() {
             </h2>
             <p className="mt-4 text-[#6B7280]">Zahara Nagar, Rd No. 10, Hyderabad</p>
           </div>
-          <div className="rounded-[8px] overflow-hidden shadow-lg border border-[#E8E4DC]">
+          <a 
+            href="https://www.google.com/maps/dir/?api=1&destination=17.417278,78.438667"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block group relative rounded-[8px] overflow-hidden shadow-lg border border-[#E8E4DC] hover:border-[#D40000] transition-all duration-300"
+          >
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors z-10 flex items-center justify-center">
+              <span className="bg-white px-6 py-3 rounded-full text-[#1A1A1A] text-[14px] font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-4 group-hover:translate-y-0 duration-300">
+                Click for Directions →
+              </span>
+            </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8272200216654!2d78.43128917604505!3d17.420077301859664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90d6350731bd%3A0xe549557a2bd62058!2sElite%20Plus%20Medical%20Centre!5e0!3m2!1sen!2sin!4v1711200000000!5m2!1sen!2sin"
               width="100%"
@@ -59,8 +69,9 @@ export default function ContactPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              className="pointer-events-none"
             ></iframe>
-          </div>
+          </a>
         </div>
       </section>
 
