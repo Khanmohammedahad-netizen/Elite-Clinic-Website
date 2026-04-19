@@ -10,14 +10,14 @@ export default function FloatingWhatsApp() {
         href={WHATSAPP_BOOKING_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="relative flex items-center justify-center w-14 h-14 bg-[#B8965A] rounded-full shadow-lg hover:scale-110 transition-transform duration-300 group"
+        className="relative flex items-center justify-center w-14 h-14 bg-[#D40000] rounded-full shadow-lg hover:scale-110 transition-transform duration-300 group"
         aria-label="Book on WhatsApp"
         initial={{ scale: 0, y: 50 }}
         animate={{ scale: 1, y: 0 }}
         transition={{ type: 'spring', stiffness: 260, damping: 20, delay: 1 }}
       >
         {/* Pulse ring */}
-        <div className="absolute inset-0 rounded-full border-2 border-[#B8965A] ping-gold pointer-events-none" />
+        <div className="absolute inset-0 rounded-full border-2 border-[#D40000] ping-red pointer-events-none" />
         
         {/* Simple crisp whatsapp icon in white */}
         <svg

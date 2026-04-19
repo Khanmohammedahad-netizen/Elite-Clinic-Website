@@ -7,12 +7,11 @@ import { Menu, X } from 'lucide-react'
 import { WHATSAPP_BOOKING_URL } from '@/lib/whatsapp'
 
 const NAV_LINKS = [
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Our Doctors', href: '#doctors' },
-  { label: 'Reviews', href: '#testimonials' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'General Medicine', href: '/general-medicine' },
+  { label: 'Pinnacle Eye Care', href: '/pinnacle-eye-care' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export default function Navbar() {
@@ -54,24 +53,24 @@ export default function Navbar() {
                 Elite Plus
               </span>
               <span
-                className="text-[11px] tracking-[0.12em] uppercase text-[#5C5C5C] leading-none mt-0.5 group-hover:text-[#B8965A] transition-colors duration-200"
+                className="text-[11px] tracking-[0.12em] uppercase text-[#5C5C5C] leading-none mt-0.5 group-hover:text-[#D40000] transition-colors duration-200"
                 style={{ fontFamily: 'var(--font-body)' }}
               >
                 Medical Centre
               </span>
-              <span className="block h-[2px] w-0 bg-[#B8965A] group-hover:w-full transition-all duration-300 mt-1 rounded-full" />
+              <span className="block h-[2px] w-0 bg-[#D40000] group-hover:w-full transition-all duration-300 mt-1 rounded-full" />
             </Link>
 
             {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center gap-8">
               {NAV_LINKS.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
-                  className="nav-text text-[#5C5C5C] hover:text-[#B8965A] transition-colors duration-200"
+                  className="nav-text text-[#5C5C5C] hover:text-[#D40000] transition-colors duration-200"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
 
@@ -81,7 +80,7 @@ export default function Navbar() {
                 href={WHATSAPP_BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#B8965A] text-white text-[13px] font-medium tracking-wide px-5 py-2.5 rounded-[2px] hover:bg-[#A07848] transition-colors duration-200"
+                className="bg-[#D40000] text-white text-[13px] font-medium tracking-wide px-5 py-2.5 rounded-[2px] hover:bg-[#B30000] transition-colors duration-200"
               >
                 Book Appointment →
               </a>
@@ -90,7 +89,7 @@ export default function Navbar() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setIsOpen(true)}
-              className="lg:hidden p-2 text-[#1A1A1A] hover:text-[#B8965A] transition-colors"
+              className="lg:hidden p-2 text-[#1A1A1A] hover:text-[#D40000] transition-colors"
               aria-label="Open menu"
             >
               <Menu size={22} />
@@ -119,7 +118,7 @@ export default function Navbar() {
             </Link>
             <button
               onClick={() => setIsOpen(false)}
-              className="p-2 text-[#1A1A1A] hover:text-[#B8965A] transition-colors"
+              className="p-2 text-[#1A1A1A] hover:text-[#D40000] transition-colors"
               aria-label="Close menu"
             >
               <X size={22} />
@@ -127,18 +126,21 @@ export default function Navbar() {
           </div>
           <nav className="flex flex-col justify-center flex-1 px-6 gap-8">
             {NAV_LINKS.map((link, i) => (
-              <motion.a
+              <motion.div
                 key={link.href}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
                 initial={{ opacity: 0, x: 24 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.06, duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                className="text-[28px] font-light text-[#1A1A1A] hover:text-[#B8965A] transition-colors duration-200"
-                style={{ fontFamily: 'var(--font-heading)' }}
               >
-                {link.label}
-              </motion.a>
+                <Link
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-[28px] font-light text-[#1A1A1A] hover:text-[#D40000] transition-colors duration-200"
+                  style={{ fontFamily: 'var(--font-heading)' }}
+                >
+                  {link.label}
+                </Link>
+              </motion.div>
             ))}
             <motion.a
               href={WHATSAPP_BOOKING_URL}
@@ -147,7 +149,7 @@ export default function Navbar() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.4 }}
-              className="mt-4 bg-[#B8965A] text-white text-center py-4 rounded-[2px] text-[15px] font-medium tracking-wide"
+              className="mt-4 bg-[#D40000] text-white text-center py-4 rounded-[2px] text-[15px] font-medium tracking-wide"
             >
               Book Appointment →
             </motion.a>

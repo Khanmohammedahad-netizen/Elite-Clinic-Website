@@ -78,7 +78,7 @@ export default function FAQ() {
                 key={index}
                 variants={reduce ? noMotion : fadeUp}
                 className={`border rounded-[8px] overflow-hidden transition-colors duration-300 ${
-                  isOpen ? 'bg-[#FAF9F7] border-[#B8965A]' : 'bg-white border-[#E8E4DC] hover:border-[#B8965A]'
+                  isOpen ? 'bg-[#F5F5F5] border-[#008B8B]' : 'bg-white border-[#E8E4DC] hover:border-[#008B8B]'
                 }`}
               >
                 <button
@@ -92,7 +92,7 @@ export default function FAQ() {
                   <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-                    className="flex-shrink-0 text-[#B8965A]"
+                    className="flex-shrink-0 text-[#D40000]"
                   >
                     <ChevronDown size={20} />
                   </motion.div>

@@ -4,11 +4,12 @@ import { useEffect, useRef, useState } from 'react'
 import { motion, useInView, useReducedMotion, type Variants } from 'framer-motion'
 import { fadeUp, noMotion, viewportOptions } from '@/lib/animations'
 
+// TODO: confirm with client if "10,000+ patients" and "15+ years experience" are accurate before adding them back.
 const STATS = [
-  { end: 15, suffix: '+', label: 'Years of Experience' },
-  { end: 4.9, suffix: '★', label: 'Average Google Rating', isFloat: true },
-  { end: 10, suffix: 'K+', label: 'Patients Treated' },
-  { end: 6, suffix: '', label: 'Medical Specialties' },
+  { end: 4.9, suffix: '★', label: 'Google Rating', isFloat: true },
+  { end: 61, suffix: '+', label: 'Patient Reviews' },
+  { end: 2, suffix: '', label: 'Departments' },
+  { end: 7, suffix: ' Days', label: 'Open Every Week' },
 ]
 
 function CountUp({ end, suffix, isFloat = false }: { end: number; suffix: string; isFloat?: boolean }) {
@@ -56,8 +57,8 @@ export default function Stats() {
 
   return (
     <section className="relative bg-[#1C1C1C] py-24">
-      {/* Gold rule above */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-[2px] bg-[#B8965A]" />
+      {/* Red rule above */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-[2px] bg-[#D40000]" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
@@ -74,7 +75,7 @@ export default function Stats() {
               className="text-center"
             >
               <div
-                className="heading-font text-[#B8965A] mb-2"
+                className="heading-font text-[#D40000] mb-2"
                 style={{
                   fontFamily: 'var(--font-heading)',
                   fontStyle: 'italic',

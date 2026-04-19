@@ -56,7 +56,7 @@ export default function Appointment() {
             >
               Ready to See a Doctor?
             </h2>
-            <div className="gold-rule" />
+            <div className="bg-[#008B8B] h-[2px] w-12 mb-8" />
 
             <p className="text-[#5C5C5C] leading-relaxed mb-10 text-[15px]">
               Walk-ins welcome. For shorter wait times, book your slot below. We&apos;ll confirm within minutes.
@@ -64,7 +64,7 @@ export default function Appointment() {
 
             <div className="space-y-6 mb-10">
               <div className="flex gap-4">
-                <MapPin className="text-[#B8965A] flex-shrink-0 mt-1" size={20} />
+                <MapPin className="text-[#008B8B] flex-shrink-0 mt-1" size={20} />
                 <div>
                   <p className="font-medium text-[#1A1A1A] mb-1">Clinic Address</p>
                   <p className="text-[#5C5C5C] text-[14px] leading-relaxed">
@@ -74,14 +74,14 @@ export default function Appointment() {
                 </div>
               </div>
               <div className="flex gap-4">
-                <Phone className="text-[#B8965A] flex-shrink-0 mt-1" size={20} />
+                <Phone className="text-[#008B8B] flex-shrink-0 mt-1" size={20} />
                 <div>
                   <p className="font-medium text-[#1A1A1A] mb-1">Phone / WhatsApp</p>
                   <p className="text-[#5C5C5C] text-[14px]">+91 91004 04352</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <Clock className="text-[#B8965A] flex-shrink-0 mt-1" size={20} />
+                <Clock className="text-[#008B8B] flex-shrink-0 mt-1" size={20} />
                 <div>
                   <p className="font-medium text-[#1A1A1A] mb-1">Working Hours</p>
                   <p className="text-[#5C5C5C] text-[14px]">
@@ -122,7 +122,7 @@ export default function Appointment() {
                       {...register('name')}
                       type="text"
                       id="name"
-                      className="w-full bg-[#FAF9F7] border border-[#E8E4DC] rounded-[2px] px-4 py-3 text-[15px] focus:outline-none focus:border-[#B8965A] transition-colors"
+                      className="w-full bg-[#FAF9F7] border border-[#E8E4DC] rounded-[2px] px-4 py-3 text-[15px] focus:outline-none focus:border-[#D40000] transition-colors"
                       placeholder="John Doe"
                     />
                     {errors.name && <p className="text-red-500 text-[12px] mt-1">{errors.name.message}</p>}
@@ -135,7 +135,7 @@ export default function Appointment() {
                       {...register('phone')}
                       type="tel"
                       id="phone"
-                      className="w-full bg-[#FAF9F7] border border-[#E8E4DC] rounded-[2px] px-4 py-3 text-[15px] focus:outline-none focus:border-[#B8965A] transition-colors"
+                      className="w-full bg-[#FAF9F7] border border-[#E8E4DC] rounded-[2px] px-4 py-3 text-[15px] focus:outline-none focus:border-[#D40000] transition-colors"
                       placeholder="+91"
                     />
                     {errors.phone && <p className="text-red-500 text-[12px] mt-1">{errors.phone.message}</p>}
@@ -150,14 +150,11 @@ export default function Appointment() {
                     <select
                       {...register('specialty')}
                       id="specialty"
-                      className="w-full bg-[#FAF9F7] border border-[#E8E4DC] rounded-[2px] px-4 py-3 text-[15px] focus:outline-none focus:border-[#B8965A] transition-colors appearance-none"
+                      className="w-full bg-[#FAF9F7] border border-[#E8E4DC] rounded-[2px] px-4 py-3 text-[15px] focus:outline-none focus:border-[#D40000] transition-colors appearance-none"
                     >
-                      <option value="">Select Specialty</option>
-                      <option value="General Medicine">General Medicine</option>
-                      <option value="Diabetes Management">Diabetes Management</option>
-                      <option value="LASIK">LASIK</option>
-                      <option value="Cataract">Cataract</option>
-                      <option value="Ophthalmology">Ophthalmology</option>
+                      <option value="">Select Department</option>
+                      <option value="General Medicine & Diabetes Care">General Medicine & Diabetes Care</option>
+                      <option value="Eye Care & Vision Surgery">Eye Care & Vision Surgery</option>
                       <option value="Other">Other</option>
                     </select>
                     {errors.specialty && <p className="text-red-500 text-[12px] mt-1">{errors.specialty.message}</p>}
@@ -170,7 +167,7 @@ export default function Appointment() {
                       {...register('date')}
                       type="date"
                       id="date"
-                      className="w-full bg-[#FAF9F7] border border-[#E8E4DC] rounded-[2px] px-4 py-3 text-[15px] text-[#5C5C5C] focus:outline-none focus:border-[#B8965A] transition-colors"
+                      className="w-full bg-[#FAF9F7] border border-[#E8E4DC] rounded-[2px] px-4 py-3 text-[15px] text-[#5C5C5C] focus:outline-none focus:border-[#D40000] transition-colors"
                     />
                     {errors.date && <p className="text-red-500 text-[12px] mt-1">{errors.date.message}</p>}
                   </div>
@@ -184,14 +181,14 @@ export default function Appointment() {
                     {...register('message')}
                     id="message"
                     rows={4}
-                    className="w-full bg-[#FAF9F7] border border-[#E8E4DC] rounded-[2px] px-4 py-3 text-[15px] focus:outline-none focus:border-[#B8965A] transition-colors resize-none"
+                    className="w-full bg-[#FAF9F7] border border-[#E8E4DC] rounded-[2px] px-4 py-3 text-[15px] focus:outline-none focus:border-[#D40000] transition-colors resize-none"
                     placeholder="How can we help you?"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-[#B8965A] text-white py-4 rounded-[2px] text-[15px] font-medium hover:bg-[#A07848] transition-colors duration-200 mt-2"
+                  className="w-full bg-[#D40000] text-white py-4 rounded-[2px] text-[15px] font-medium hover:bg-[#B30000] transition-colors duration-200 mt-2"
                 >
                   Request Appointment →
                 </button>

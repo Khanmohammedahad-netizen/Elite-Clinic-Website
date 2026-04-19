@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, DM_Sans } from 'next/font/google'
+import { Playfair_Display, DM_Sans } from 'next/font/google'
 import './globals.css'
 
-const cormorantGaramond = Cormorant_Garamond({
+const playfair = Playfair_Display({
   subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  style: ['normal', 'italic'],
-  variable: '--font-cormorant',
+  weight: ['400', '700', '900'],
+  variable: '--font-playfair',
   display: 'swap',
 })
 
@@ -17,10 +16,17 @@ const dmSans = DM_Sans({
   display: 'swap',
 })
 
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import FloatingWhatsApp from '@/components/FloatingWhatsApp'
+
 export const metadata: Metadata = {
-  title: 'Elite Plus Medical Centre | Best Clinic in Banjara Hills, Hyderabad',
-  description: "Hyderabad's highest-rated multi-specialty clinic with 4.9★ on Google. General medicine, diabetes care, LASIK, cataract surgery & ophthalmology. Open every day 8AM–9:30PM in Banjara Hills.",
-  keywords: 'LASIK Hyderabad, diabetes specialist Banjara Hills, eye doctor Hyderabad, best clinic Banjara Hills, ophthalmologist Hyderabad, cataract surgery cost Hyderabad',
+  title: {
+    default: 'Elite Plus Medical Centre | Clinic in Banjara Hills, Hyderabad',
+    template: '%s | Elite Plus Medical Centre'
+  },
+  description: "A dual-specialty clinic in Banjara Hills, Hyderabad, offering expert general medicine, diabetes care, and advanced eye treatments at Pinnacle Eye Care. Open every day 8AM–9:30PM.",
+  keywords: 'Physician Banjara Hills, diabetes treatment Hyderabad, eye clinic Banjara Hills, LASIK surgery Hyderabad, cataract surgeon Hyderabad, Pinnacle Eye Care',
 }
 
 const jsonLd = {
@@ -57,8 +63,13 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${cormorantGaramond.variable} ${dmSans.variable} antialiased bg-white`}>
-        {children}
+      <body className={`${playfair.variable} ${dmSans.variable} antialiased bg-white min-h-screen flex flex-col`}>
+        <Navbar />
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
+        <FloatingWhatsApp />
       </body>
     </html>
   )

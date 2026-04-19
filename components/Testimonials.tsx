@@ -72,11 +72,11 @@ export default function Testimonials() {
           {REVIEWS.map((review) => (
             <div
               key={review.id}
-              className="bg-[#FAF9F7] border-l-4 border-l-[#B8965A] rounded-r-lg p-8 h-full"
+              className="bg-[#F5F5F5] border-l-4 border-l-[#D40000] rounded-r-lg p-8 h-full"
             >
               <div className="flex gap-1 mb-5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} fill="#B8965A" color="#B8965A" />
+                  <Star key={i} size={16} fill="#F5A623" color="#F5A623" />
                 ))}
               </div>
               <p
@@ -101,11 +101,11 @@ export default function Testimonials() {
               {REVIEWS.map((review) => (
                 <motion.div
                   key={review.id}
-                  className="bg-[#FAF9F7] border-l-4 border-l-[#B8965A] rounded-r-[8px] p-8 w-[85vw] max-w-[320px] flex-shrink-0"
+                  className="bg-[#F5F5F5] border-l-4 border-l-[#D40000] rounded-r-[8px] p-8 w-[85vw] max-w-[320px] flex-shrink-0"
                 >
                   <div className="flex gap-1 mb-5">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={16} fill="#B8965A" color="#B8965A" />
+                      <Star key={i} size={16} fill="#F5A623" color="#F5A623" />
                     ))}
                   </div>
                   <p
@@ -123,7 +123,7 @@ export default function Testimonials() {
       </div>
 
       {/* CTA Banner */}
-      <div className="bg-[#FAF9F7] border-y border-[#E8E4DC] py-16">
+      <div className="bg-[#F5F5F5] border-y border-[#E8E4DC] py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
             initial="hidden"
@@ -141,7 +141,7 @@ export default function Testimonials() {
               href={WHATSAPP_BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#B8965A] text-white font-medium px-8 py-4 rounded-[2px] text-[15px] hover:bg-[#A07848] transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2 bg-[#D40000] text-white font-medium px-8 py-4 rounded-[2px] text-[15px] hover:bg-[#B30000] transition-all duration-200"
             >
               Book Your Appointment →
             </a>

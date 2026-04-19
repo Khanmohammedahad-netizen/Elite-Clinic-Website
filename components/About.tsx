@@ -29,7 +29,7 @@ export default function About() {
             >
               Where Every Patient Leaves Informed and Confident
             </h2>
-            <div className="gold-rule" />
+            <div className="bg-[#008B8B] h-[2px] w-12 mb-8" />
             <p className="text-[#5C5C5C] leading-relaxed mb-5">
               At Elite Plus Medical Centre, we believe that great healthcare begins with great listening.
               Every consultation at our clinic is unhurried — we take the time to understand not just
@@ -39,8 +39,7 @@ export default function About() {
             <p className="text-[#5C5C5C] leading-relaxed">
               We hold a firm commitment to evidence-based medicine: no unnecessary tests, no
               excessive prescriptions. Our physicians prescribe only what is clinically indicated,
-              explained in plain language. This philosophy of radical transparency has earned us
-              the trust of over 10,000 patients across Hyderabad — and a 4.9-star rating on Google.
+              explained in plain language.
             </p>
           </motion.div>
 
@@ -51,11 +50,11 @@ export default function About() {
             viewport={viewportOptions}
             variants={reduce ? noMotion : fadeRight}
           >
-            <div className="bg-white border border-[#E8E4DC] rounded-[8px] shadow-doctor overflow-hidden border-l-4 border-l-[#B8965A]">
+            <div className="bg-white border border-[#E8E4DC] rounded-[8px] shadow-doctor overflow-hidden border-l-4 border-l-[#D40000]">
               <div className="p-8">
                 {/* Avatar + name */}
                 <div className="flex items-start gap-5 mb-6">
-                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#B8965A] flex items-center justify-center text-white text-[18px] font-semibold"
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#D40000] flex items-center justify-center text-white text-[18px] font-semibold"
                     style={{ fontFamily: 'var(--font-heading)' }}>
                     Dr. A
                   </div>
@@ -69,7 +68,7 @@ export default function About() {
                     <p className="text-[13px] text-[#5C5C5C] mt-1 leading-snug">
                       MBBS, Diploma in Emergency Medicine
                     </p>
-                    <p className="text-[12px] text-[#B8965A] font-medium mt-0.5">
+                    <p className="text-[12px] text-[#008B8B] font-medium mt-0.5">
                       Royal College of Physicians, London
                     </p>
                   </div>
@@ -77,11 +76,10 @@ export default function About() {
 
                 {/* Bio */}
                 <p className="text-[#5C5C5C] text-[14px] leading-relaxed mb-6">
-                  Dr. Adnan brings over 15 years of clinical expertise across general medicine and
+                  Dr. Adnan brings clinical expertise across general medicine and
                   emergency care, with advanced training from the Royal College of Physicians, London.
                   Known for his empathetic patient-first approach, he ensures every consultation is
-                  thorough, unhurried, and focused on clear communication. Patients consistently
-                  describe him as dedicated, thoughtful, and completely trustworthy.
+                  thorough, unhurried, and focused on clear communication.
                 </p>
 
                 {/* Credential badges */}
@@ -96,11 +94,7 @@ export default function About() {
                   ))}
                 </div>
 
-                {/* Experience */}
-                <div className="mt-6 pt-6 border-t border-[#E8E4DC] flex items-center gap-3">
-                  <div className="text-[28px] font-semibold text-[#B8965A] heading-font" style={{ fontFamily: 'var(--font-heading)', fontStyle: 'italic' }}>15+</div>
-                  <div className="text-[13px] text-[#5C5C5C]">Years of clinical practice<br />across general &amp; emergency medicine</div>
-                </div>
+                {/* TODO: confirm with client if "15+ years experience" is accurate */}
               </div>
             </div>
           </motion.div>

@@ -16,13 +16,14 @@ const config: Config = {
         'text-primary': '#1A1A1A',
         'text-secondary': '#5C5C5C',
         'text-muted': '#9A9A9A',
-        'accent-gold': '#B8965A',
+        'primary': '#D40000',
+        'secondary': '#008B8B',
         'accent-dark': '#1C1C1C',
         'accent-green': '#2D6A4F',
         'whatsapp': '#25D366',
       },
       fontFamily: {
-        heading: ['var(--font-cormorant)', 'Georgia', 'serif'],
+        heading: ['var(--font-playfair)', 'Georgia', 'serif'],
         body: ['var(--font-dm-sans)', 'system-ui', 'sans-serif'],
       },
       fontSize: {

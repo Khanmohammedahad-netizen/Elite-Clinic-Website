@@ -3,28 +3,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { staggerContainer, fadeUp, noMotion, viewportOptions } from '@/lib/animations'
 
-const DOCTORS = [
-  {
-    id: 'adnan',
-    name: 'Dr. Adnan',
-    title: 'MBBS, Diploma in Emergency Medicine',
-    credentials: 'Royal College of Physicians, London',
-    bio: 'Dr. Adnan brings over 15 years of clinical expertise across general medicine and emergency care. Known for his empathetic patient-first approach, he ensures every consultation is thorough, unhurried, and focused on clear communication.',
-    specialties: ['General Medicine', 'Diabetes Management', 'Emergency Care'],
-    initials: 'Dr. A',
-    isPlaceholder: false,
-  },
-  {
-    id: 'eye-specialist',
-    name: 'Our Ophthalmologist',
-    title: 'MS Ophthalmology',
-    credentials: 'Fellowship in Cornea & Refractive Surgery',
-    bio: 'Details coming soon. Our senior eye specialist brings extensive experience in advanced laser vision correction and premium cataract surgery, committed to restoring clarity to your vision.',
-    specialties: ['LASIK', 'Cataract', 'Cornea', 'Ophthalmology'],
-    initials: 'Dr.',
-    isPlaceholder: true,
-  },
-]
+import { DOCTORS } from '@/lib/data'
 
 export default function Doctors() {
   const reduce = useReducedMotion()
@@ -65,13 +44,13 @@ export default function Doctors() {
               key={doctor.id}
               variants={reduce ? noMotion : fadeUp}
               whileHover={reduce ? undefined : { y: -4, transition: { duration: 0.2 } }}
-              className={`bg-white border rounded-[8px] p-8 transition-all duration-300 hover:shadow-card-hover hover:border-[#B8965A] ${
+              className={`bg-white border rounded-[8px] p-8 transition-all duration-300 hover:shadow-card-hover hover:border-[#D40000] ${
                 doctor.isPlaceholder ? 'border-dashed border-[#E8E4DC]' : 'border-[#E8E4DC]'
               }`}
             >
               <div className="flex items-center gap-5 mb-6">
                 <div className={`flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center text-white text-[18px] font-semibold ${
-                  doctor.isPlaceholder ? 'bg-[#D1C7B8]' : 'bg-[#B8965A]'
+                  doctor.isPlaceholder ? 'bg-[#9A9A9A]' : 'bg-[#D40000]'
                 }`} style={{ fontFamily: 'var(--font-heading)' }}>
                   {doctor.initials}
                 </div>
@@ -85,7 +64,7 @@ export default function Doctors() {
                     {doctor.name}
                   </h3>
                   <p className="text-[13px] text-[#5C5C5C] mt-1 line-clamp-1">{doctor.title}</p>
-                  <p className="text-[12px] text-[#B8965A] font-medium mt-0.5">{doctor.credentials}</p>
+                  <p className="text-[12px] text-[#008B8B] font-medium mt-0.5">{doctor.credentials}</p>
                 </div>
               </div>
 
@@ -93,7 +72,7 @@ export default function Doctors() {
                 {doctor.specialties.map((spec) => (
                   <span
                     key={spec}
-                    className="text-[11px] uppercase tracking-wide px-3 py-1 bg-white border border-[#B8965A] rounded-full text-[#B8965A] font-medium"
+                    className="text-[11px] uppercase tracking-wide px-3 py-1 bg-white border border-[#008B8B] rounded-full text-[#008B8B] font-medium"
                   >
                     {spec}
                   </span>

@@ -27,7 +27,7 @@ export default function Footer() {
           <motion.div variants={reduce ? noMotion : fadeUp} className="lg:col-span-1">
             <Link href="/" className="inline-flex flex-col leading-none mb-6 group">
               <span
-                className="heading-font text-[24px] font-semibold text-white leading-none group-hover:text-[#B8965A] transition-colors"
+                className="heading-font text-[24px] font-semibold text-white leading-none group-hover:text-[#D40000] transition-colors"
                 style={{ fontFamily: 'var(--font-heading)' }}
               >
                 Elite Plus
@@ -39,7 +39,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-[#9A9A9A] text-[14px] leading-relaxed mb-6">
-              Hyderabad&apos;s highest-rated multi-specialty clinic. General medicine, diabetes care, and advanced eye treatments.
+              A dual-specialty clinic in Banjara Hills providing expert Physician services and advanced Eye Care.
             </p>
           </motion.div>
 
@@ -48,16 +48,16 @@ export default function Footer() {
             <h4 className="text-[14px] font-semibold tracking-wide uppercase mb-6 text-white">Quick Links</h4>
             <ul className="space-y-4">
               {[
-                { label: 'About', href: '#about' },
-                { label: 'Services', href: '#services' },
-                { label: 'Our Doctors', href: '#doctors' },
-                { label: 'Reviews', href: '#testimonials' },
-                { label: 'FAQ', href: '#faq' },
+                { label: 'Home', href: '/' },
+                { label: 'About Us', href: '/about' },
+                { label: 'General Medicine', href: '/general-medicine' },
+                { label: 'Pinnacle Eye Care', href: '/pinnacle-eye-care' },
+                { label: 'Contact', href: '/contact' },
               ].map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-[14px] text-[#9A9A9A] hover:text-[#B8965A] transition-colors">
+                  <Link href={link.href} className="text-[14px] text-[#9A9A9A] hover:text-[#D40000] transition-colors">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -65,16 +65,18 @@ export default function Footer() {
 
           {/* Specialties */}
           <motion.div variants={reduce ? noMotion : fadeUp}>
-            <h4 className="text-[14px] font-semibold tracking-wide uppercase mb-6 text-white">Specialties</h4>
-            <ul className="space-y-4">
-              {['General Medicine', 'Diabetes Management', 'LASIK Surgery', 'Cataract Surgery', 'Ophthalmology'].map((link) => (
-                <li key={link}>
-                  <a href="#services" className="text-[14px] text-[#9A9A9A] hover:text-[#B8965A] transition-colors">
-                    {link}
-                  </a>
+              {[
+                { label: 'General Medicine', href: '/general-medicine' },
+                { label: 'Diabetes Care', href: '/general-medicine' },
+                { label: 'LASIK Surgery', href: '/pinnacle-eye-care' },
+                { label: 'Cataract Surgery', href: '/pinnacle-eye-care' },
+              ].map((link) => (
+                <li key={link.label}>
+                  <Link href={link.href} className="text-[14px] text-[#9A9A9A] hover:text-[#D40000] transition-colors">
+                    {link.label}
+                  </Link>
                 </li>
               ))}
-            </ul>
           </motion.div>
 
           {/* Contact */}
@@ -82,17 +84,17 @@ export default function Footer() {
             <h4 className="text-[14px] font-semibold tracking-wide uppercase mb-6 text-white">Contact Info</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="text-[#B8965A] mt-1 shrink-0" size={16} />
+                <MapPin className="text-[#008B8B] mt-1 shrink-0" size={16} />
                 <span className="text-[14px] text-[#9A9A9A] leading-relaxed">
                   Banjara Hills Rd No. 10, Zahara Nagar, Hyderabad, 500034
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="text-[#B8965A] shrink-0" size={16} />
+                <Phone className="text-[#008B8B] shrink-0" size={16} />
                 <span className="text-[14px] text-[#9A9A9A]">+91 91004 04352</span>
               </li>
               <li className="flex items-center gap-3">
-                <Clock className="text-[#B8965A] shrink-0" size={16} />
+                <Clock className="text-[#008B8B] shrink-0" size={16} />
                 <span className="text-[14px] text-[#9A9A9A]">Open Every Day: 8AM – 9:30PM</span>
               </li>
             </ul>
@@ -105,7 +107,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Elite Plus Medical Centre. Banjara Hills, Hyderabad.
           </p>
           <p className="text-[11px] text-[#7A7A7A] uppercase tracking-wider">
-            Developed by <a href="#" className="hover:text-[#B8965A] transition-colors">MAK Software Solutions</a>
+            Developed by <a href="#" className="hover:text-[#D40000] transition-colors">MAK Software Solutions</a>
           </p>
         </div>
       </div>
