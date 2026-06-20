@@ -21,6 +21,7 @@ import Footer from '@/components/Footer'
 import FloatingWhatsApp from '@/components/FloatingWhatsApp'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://elite-clinic-website.vercel.app'),
   title: {
     default: 'Pinnacle Healthcare and Eye Clinic | Clinic in Banjara Hills, Hyderabad',
     template: '%s | Pinnacle Healthcare and Eye Clinic'
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Pinnacle Healthcare and Eye Clinic Logo',
+        alt: 'Pinnacle Healthcare and Eye Clinic',
       },
     ],
     locale: 'en_IN',
