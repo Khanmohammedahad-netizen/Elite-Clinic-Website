@@ -48,13 +48,13 @@ export default function ContactPage() {
             <h2 className="heading-font text-[32px] text-[#1A1A1A]" style={{ fontFamily: 'var(--font-heading)' }}>
               Find Us in Banjara Hills
             </h2>
-            <p className="mt-4 text-[#6B7280]">Zahara Nagar, Rd No. 10, Hyderabad</p>
+            <p className="mt-4 text-[#6B7280]">Road No 10, Banjara Hills, Hyderabad</p>
           </div>
-          <a 
+          <a
             href="https://www.google.com/maps/dir/?api=1&destination=17.417278,78.438667"
             target="_blank"
             rel="noopener noreferrer"
-            className="block group relative rounded-[8px] overflow-hidden shadow-lg border border-[#E8E4DC] hover:border-[#D40000] transition-all duration-300"
+            className="block group relative rounded-[8px] overflow-hidden shadow-lg border border-[#E8E4DC] hover:border-[#6E1423] transition-all duration-300"
           >
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors z-10 flex items-center justify-center">
               <span className="bg-white px-6 py-3 rounded-full text-[#1A1A1A] text-[14px] font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-4 group-hover:translate-y-0 duration-300">

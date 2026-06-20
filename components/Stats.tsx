@@ -58,7 +58,7 @@ export default function Stats() {
   return (
     <section className="relative bg-[#1C1C1C] py-24">
       {/* Red rule above */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-[2px] bg-[#D40000]" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-[2px] bg-[#6E1423]" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
@@ -75,7 +75,7 @@ export default function Stats() {
               className="text-center"
             >
               <div
-                className="heading-font text-[#D40000] mb-2"
+                className="heading-font text-[#6E1423] mb-2"
                 style={{
                   fontFamily: 'var(--font-heading)',
                   fontStyle: 'italic',

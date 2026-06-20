@@ -30,7 +30,7 @@ export default function QuickIntro() {
             Dual-Specialty Care for Your Family
           </h2>
           <p className="mt-6 text-[#6B7280] max-w-2xl mx-auto text-[17px] leading-relaxed">
-            Elite Plus Medical Centre brings together expert general medicine and specialized eye care under one roof. Whether you need a consultation with a physician or advanced vision correction surgery, our doctors are here for you.
+            Pinnacle Healthcare and Eye Clinic, a unit of Elite Plus Medical Centre, brings together expert general medicine and specialized eye care under one roof. Whether you need a consultation with a physician or advanced vision correction surgery, our doctors are here for you.
           </p>
         </motion.div>
       </div>
@@ -46,10 +46,10 @@ export default function QuickIntro() {
           {/* General Medicine Card */}
           <motion.div
             variants={reduce ? noMotion : fadeUp}
-            className="group relative bg-[#F5F5F5] p-10 rounded-[4px] border border-transparent hover:border-[#008B8B] transition-all duration-300"
+            className="group relative bg-[#F5F5F5] p-10 rounded-[4px] border border-transparent hover:border-[#1E3D23] transition-all duration-300"
           >
             <div className="bg-white w-14 h-14 rounded-full flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300">
-              <Stethoscope className="text-[#008B8B]" size={28} />
+              <Stethoscope className="text-[#1E3D23]" size={28} />
             </div>
             <h3 className="heading-font text-[24px] text-[#1A1A1A] mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
               General Medicine & Diabetes Care
@@ -58,12 +58,12 @@ export default function QuickIntro() {
               Comprehensive diagnosis, treatment, and ongoing management of general health conditions and diabetes.
             </p>
             <div className="mb-8">
-              <p className="text-[14px] font-semibold text-[#1A1A1A]">Dr. Adnan</p>
-              <p className="text-[13px] text-[#6B7280]">MBBS, Dip. Emergency Medicine</p>
+              <p className="text-[14px] font-semibold text-[#1A1A1A]">Dr. Adnan Aziz</p>
+              <p className="text-[13px] text-[#6B7280]">MBBS, DEM, FDM Royal College, U.K.</p>
             </div>
             <Link
               href="/general-medicine"
-              className="inline-flex items-center text-[#008B8B] font-medium hover:gap-2 transition-all duration-200"
+              className="inline-flex items-center text-[#1E3D23] font-medium hover:gap-2 transition-all duration-200"
             >
               Learn more <span className="ml-1">→</span>
             </Link>
@@ -72,10 +72,10 @@ export default function QuickIntro() {
           {/* Eye Care Card */}
           <motion.div
             variants={reduce ? noMotion : fadeUp}
-            className="group relative bg-[#F5F5F5] p-10 rounded-[4px] border border-transparent hover:border-[#D40000] transition-all duration-300"
+            className="group relative bg-[#F5F5F5] p-10 rounded-[4px] border border-transparent hover:border-[#6E1423] transition-all duration-300"
           >
             <div className="bg-white w-14 h-14 rounded-full flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300">
-              <Eye className="text-[#D40000]" size={28} />
+              <Eye className="text-[#6E1423]" size={28} />
             </div>
             <h3 className="heading-font text-[24px] text-[#1A1A1A] mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
               Pinnacle Eye Care
@@ -84,12 +84,12 @@ export default function QuickIntro() {
               Advanced ophthalmology services including LASIK, cataract surgery, and cornea treatments.
             </p>
             <div className="mb-8">
-              <p className="text-[14px] font-semibold text-[#1A1A1A]">Dr. Maimoona</p>
+              <p className="text-[14px] font-semibold text-[#1A1A1A]">Dr. Maimoona Fareed</p>
               <p className="text-[13px] text-[#6B7280]">MBBS, DO, DNB</p>
             </div>
             <Link
               href="/pinnacle-eye-care"
-              className="inline-flex items-center text-[#D40000] font-medium hover:gap-2 transition-all duration-200"
+              className="inline-flex items-center text-[#6E1423] font-medium hover:gap-2 transition-all duration-200"
             >
               Learn more <span className="ml-1">→</span>
             </Link>

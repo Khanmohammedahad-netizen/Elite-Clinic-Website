@@ -42,7 +42,7 @@ export default function GeneralMedicinePage() {
               Comprehensive Care for Your Everyday Health
             </h1>
             <p className="text-[#6B7280] text-[18px] leading-relaxed">
-              From routine check-ups to managing chronic conditions like diabetes and hypertension, Dr. Adnan provides thorough, evidence-based medical care with a focus on clear communication and patient understanding.
+              From routine check-ups to managing chronic conditions like diabetes and hypertension, Dr. Adnan Aziz provides thorough, evidence-based medical care with a focus on clear communication and patient understanding.
             </p>
           </motion.div>
         </div>
@@ -51,7 +51,7 @@ export default function GeneralMedicinePage() {
       {/* Doctor Card */}
       <section className="py-24 bg-[#F5F5F5]">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <DoctorProfileCard doctor={adnan} accentColor="#008B8B" />
+          <DoctorProfileCard doctor={adnan} accentColor="#1E3D23" />
         </div>
       </section>
 
@@ -67,8 +67,8 @@ export default function GeneralMedicinePage() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {services.map((service, i) => (
-              <div key={i} className="flex gap-4 p-6 rounded-[4px] bg-[#F5F5F5] border border-transparent hover:border-[#008B8B] transition-all">
-                <CheckCircle2 className="text-[#008B8B] flex-shrink-0" size={20} />
+              <div key={i} className="flex gap-4 p-6 rounded-[4px] bg-[#F5F5F5] border border-transparent hover:border-[#1E3D23] transition-all">
+                <CheckCircle2 className="text-[#1E3D23] flex-shrink-0" size={20} />
                 <div>
                   <h3 className="font-bold text-[#1A1A1A] mb-2">{service.title}</h3>
                   <p className="text-[#6B7280] text-[14px] leading-relaxed">{service.desc}</p>
@@ -80,16 +80,16 @@ export default function GeneralMedicinePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#008B8B]">
+      <section className="py-24 bg-[#1E3D23]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="heading-font text-[32px] text-white mb-8" style={{ fontFamily: 'var(--font-heading)' }}>
-            Book a consultation with Dr. Adnan
+            Book a consultation with Dr. Adnan Aziz
           </h2>
           <a
             href={WHATSAPP_BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-white text-[#008B8B] font-bold px-10 py-5 rounded-[4px] text-[16px] hover:bg-[#F5F5F5] transition-all duration-200 shadow-xl"
+            className="inline-flex items-center justify-center gap-2 bg-white text-[#1E3D23] font-bold px-10 py-5 rounded-[4px] text-[16px] hover:bg-[#F5F5F5] transition-all duration-200 shadow-xl"
           >
             Book on WhatsApp →
           </a>

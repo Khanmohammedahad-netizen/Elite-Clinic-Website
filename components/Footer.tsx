@@ -27,15 +27,15 @@ export default function Footer() {
           <motion.div variants={reduce ? noMotion : fadeUp} className="lg:col-span-1">
             <Link href="/" className="inline-flex flex-col leading-none mb-6 group">
               <span
-                className="heading-font text-[24px] font-semibold text-white leading-none group-hover:text-[#D40000] transition-colors"
+                className="heading-font text-[22px] font-semibold text-white leading-none group-hover:text-[#6E1423] transition-colors"
                 style={{ fontFamily: 'var(--font-heading)' }}
               >
-                Elite Plus
+                Pinnacle Healthcare and Eye Clinic
               </span>
               <span
                 className="text-[11px] tracking-[0.12em] uppercase text-[#9A9A9A] leading-none mt-1 group-hover:text-white transition-colors"
               >
-                Medical Centre
+                Unit of Elite Plus Medical Centre
               </span>
             </Link>
             <p className="text-[#9A9A9A] text-[14px] leading-relaxed mb-6">
@@ -55,7 +55,7 @@ export default function Footer() {
                 { label: 'Contact', href: '/contact' },
               ].map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-[14px] text-[#9A9A9A] hover:text-[#D40000] transition-colors">
+                  <Link href={link.href} className="text-[14px] text-[#9A9A9A] hover:text-[#6E1423] transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -72,7 +72,7 @@ export default function Footer() {
                 { label: 'Cataract Surgery', href: '/pinnacle-eye-care' },
               ].map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-[14px] text-[#9A9A9A] hover:text-[#D40000] transition-colors">
+                  <Link href={link.href} className="text-[14px] text-[#9A9A9A] hover:text-[#6E1423] transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -84,20 +84,20 @@ export default function Footer() {
             <h4 className="text-[14px] font-semibold tracking-wide uppercase mb-6 text-white">Contact Info</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="text-[#008B8B] mt-1 shrink-0" size={16} />
+                <MapPin className="text-[#1E3D23] mt-1 shrink-0" size={16} />
                 <span className="text-[14px] text-[#9A9A9A] leading-relaxed">
-                  Banjara Hills Rd No. 10, Zahara Nagar, Hyderabad, 500034
+                  # 8-2-602/21, Road No 10, Banjara Hills, Hyderabad - 500034
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="text-[#008B8B] shrink-0" size={16} />
+                <Phone className="text-[#1E3D23] shrink-0" size={16} />
                 <span className="text-[14px] text-[#9A9A9A]">+91 91004 04352</span>
               </li>
               <li className="flex items-start gap-3">
-                <Clock className="text-[#008B8B] shrink-0 mt-1" size={16} />
+                <Clock className="text-[#1E3D23] shrink-0 mt-1" size={16} />
                 <div className="text-[14px] text-[#9A9A9A] leading-relaxed">
-                  Mon – Sat: 8:00 AM – 1:30 PM &amp; 6:00 PM – 9:30 PM <br />
-                  <span className="text-[#D40000]">Sunday: Closed</span>
+                  Mon – Sat: 10 AM – 3 PM &amp; 7 PM – 10 PM <br />
+                  <span className="text-[#6E1423]">Sunday: Closed</span>
                 </div>
               </li>
             </ul>
@@ -107,10 +107,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-[#333333] pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
           <p className="text-[13px] text-[#7A7A7A]">
-            &copy; {new Date().getFullYear()} Elite Plus Medical Centre. Banjara Hills, Hyderabad.
+            &copy; {new Date().getFullYear()} Pinnacle Healthcare and Eye Clinic — Unit of Elite Plus Medical Centre. Banjara Hills, Hyderabad.
           </p>
           <p className="text-[11px] text-[#7A7A7A] uppercase tracking-wider">
-            Developed by <a href="#" className="hover:text-[#D40000] transition-colors">MAK Software Solutions</a>
+            Developed by <a href="#" className="hover:text-[#6E1423] transition-colors">MAK Software Solutions</a>
           </p>
         </div>
       </div>

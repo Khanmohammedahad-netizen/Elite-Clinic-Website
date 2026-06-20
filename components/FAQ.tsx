@@ -16,11 +16,11 @@ const FAQS = [
   },
   {
     question: 'Do you offer diabetes management as an ongoing program?',
-    answer: 'Yes. Dr. Adnan provides structured diabetes management including quarterly check-ups, HbA1c monitoring, medication review, and dietary guidance.',
+    answer: 'Yes. Dr. Adnan Aziz provides structured diabetes management including quarterly check-ups, HbA1c monitoring, medication review, and dietary guidance.',
   },
   {
     question: 'What are the clinic timings?',
-    answer: 'We are open Monday through Saturday in two shifts: 8:00 AM – 1:30 PM and 6:00 PM – 9:30 PM. The clinic is closed on Sundays.',
+    answer: 'We are open Monday through Saturday in two shifts: 10 AM – 3 PM and 7 PM – 10 PM. The clinic is closed on Sundays.',
   },
   {
     question: 'Is cataract surgery performed at the clinic?',
@@ -78,7 +78,7 @@ export default function FAQ() {
                 key={index}
                 variants={reduce ? noMotion : fadeUp}
                 className={`border rounded-[8px] overflow-hidden transition-colors duration-300 ${
-                  isOpen ? 'bg-[#F5F5F5] border-[#008B8B]' : 'bg-white border-[#E8E4DC] hover:border-[#008B8B]'
+                  isOpen ? 'bg-[#F5F5F5] border-[#1E3D23]' : 'bg-white border-[#E8E4DC] hover:border-[#1E3D23]'
                 }`}
               >
                 <button
@@ -92,7 +92,7 @@ export default function FAQ() {
                   <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-                    className="flex-shrink-0 text-[#D40000]"
+                    className="flex-shrink-0 text-[#6E1423]"
                   >
                     <ChevronDown size={20} />
                   </motion.div>

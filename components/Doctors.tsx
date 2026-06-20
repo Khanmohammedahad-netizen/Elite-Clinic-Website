@@ -44,13 +44,13 @@ export default function Doctors() {
               key={doctor.id}
               variants={reduce ? noMotion : fadeUp}
               whileHover={reduce ? undefined : { y: -4, transition: { duration: 0.2 } }}
-              className={`bg-white border rounded-[8px] p-8 transition-all duration-300 hover:shadow-card-hover hover:border-[#D40000] ${
+              className={`bg-white border rounded-[8px] p-8 transition-all duration-300 hover:shadow-card-hover hover:border-[#6E1423] ${
                 doctor.isPlaceholder ? 'border-dashed border-[#E8E4DC]' : 'border-[#E8E4DC]'
               }`}
             >
               <div className="flex items-center gap-5 mb-6">
                 <div className={`flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center text-white text-[18px] font-semibold ${
-                  doctor.isPlaceholder ? 'bg-[#9A9A9A]' : 'bg-[#D40000]'
+                  doctor.isPlaceholder ? 'bg-[#9A9A9A]' : 'bg-[#6E1423]'
                 }`} style={{ fontFamily: 'var(--font-heading)' }}>
                   {doctor.initials}
                 </div>
@@ -64,7 +64,7 @@ export default function Doctors() {
                     {doctor.name}
                   </h3>
                   <p className="text-[13px] text-[#5C5C5C] mt-1 line-clamp-1">{doctor.title}</p>
-                  <p className="text-[12px] text-[#008B8B] font-medium mt-0.5">{doctor.credentials}</p>
+                  <p className="text-[12px] text-[#1E3D23] font-medium mt-0.5">{doctor.credentials}</p>
                 </div>
               </div>
 
@@ -72,7 +72,7 @@ export default function Doctors() {
                 {doctor.specialties.map((spec) => (
                   <span
                     key={spec}
-                    className="text-[11px] uppercase tracking-wide px-3 py-1 bg-white border border-[#008B8B] rounded-full text-[#008B8B] font-medium"
+                    className="text-[11px] uppercase tracking-wide px-3 py-1 bg-white border border-[#1E3D23] rounded-full text-[#1E3D23] font-medium"
                   >
                     {spec}
                   </span>

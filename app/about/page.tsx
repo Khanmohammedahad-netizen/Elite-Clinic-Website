@@ -32,7 +32,7 @@ export default function AboutPage() {
               Where Every Patient Leaves Informed and Confident
             </h1>
             <p className="text-[#6B7280] text-[18px] leading-relaxed">
-              At Elite Plus Medical Centre, we believe that great healthcare begins with great listening. Every consultation is unhurried — we take the time to understand not just your symptoms, but your life, your concerns, and your goals.
+              At Pinnacle Healthcare and Eye Clinic, a unit of Elite Plus Medical Centre, we believe that great healthcare begins with great listening. Every consultation is unhurried — we take the time to understand not just your symptoms, but your life, your concerns, and your goals.
             </p>
           </motion.div>
         </div>
@@ -61,17 +61,17 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center md:text-left">
               <div className="bg-[#F5F5F5] w-12 h-12 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0">
-                <MapPin className="text-[#008B8B]" size={24} />
+                <MapPin className="text-[#1E3D23]" size={24} />
               </div>
               <h3 className="font-semibold text-[#1A1A1A] mb-4">Clinic Address</h3>
               <p className="text-[#6B7280] text-[15px] leading-relaxed">
-                Banjara Hills Rd No. 10, Zahara Nagar,<br />
-                Hyderabad, Telangana 500034
+                # 8-2-602/21, Road No 10, Banjara Hills,<br />
+                Hyderabad - 500034
               </p>
             </div>
             <div className="text-center md:text-left">
               <div className="bg-[#F5F5F5] w-12 h-12 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0">
-                <Phone className="text-[#008B8B]" size={24} />
+                <Phone className="text-[#1E3D23]" size={24} />
               </div>
               <h3 className="font-semibold text-[#1A1A1A] mb-4">Phone / WhatsApp</h3>
               <p className="text-[#6B7280] text-[15px] leading-relaxed">
@@ -80,12 +80,12 @@ export default function AboutPage() {
             </div>
             <div className="text-center md:text-left">
               <div className="bg-[#F5F5F5] w-12 h-12 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0">
-                <Clock className="text-[#008B8B]" size={24} />
+                <Clock className="text-[#1E3D23]" size={24} />
               </div>
               <h3 className="font-semibold text-[#1A1A1A] mb-4">Working Hours</h3>
               <div className="text-[#6B7280] text-[15px] leading-relaxed">
-                Mon – Sat: 8:00 AM – 1:30 PM &amp; 6:00 PM – 9:30 PM <br />
-                <span className="text-[#D40000] font-medium">Sunday: Closed</span>
+                Mon – Sat: 10 AM – 3 PM &amp; 7 PM – 10 PM <br />
+                <span className="text-[#6E1423] font-medium">Sunday: Closed</span>
               </div>
             </div>
           </div>

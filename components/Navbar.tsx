@@ -47,18 +47,18 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="group flex flex-col leading-none">
               <span
-                className="heading-font text-[22px] font-semibold text-[#1A1A1A] leading-none"
+                className="heading-font text-[20px] font-semibold text-[#1A1A1A] leading-none"
                 style={{ fontFamily: 'var(--font-heading)' }}
               >
-                Elite Plus
+                Pinnacle
               </span>
               <span
-                className="text-[11px] tracking-[0.12em] uppercase text-[#5C5C5C] leading-none mt-0.5 group-hover:text-[#D40000] transition-colors duration-200"
+                className="text-[10px] tracking-[0.1em] uppercase text-[#5C5C5C] leading-none mt-0.5 group-hover:text-[#6E1423] transition-colors duration-200"
                 style={{ fontFamily: 'var(--font-body)' }}
               >
-                Medical Centre
+                Healthcare & Eye Clinic
               </span>
-              <span className="block h-[2px] w-0 bg-[#D40000] group-hover:w-full transition-all duration-300 mt-1 rounded-full" />
+              <span className="block h-[2px] w-0 bg-[#6E1423] group-hover:w-full transition-all duration-300 mt-1 rounded-full" />
             </Link>
 
             {/* Desktop Nav */}
@@ -67,7 +67,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="nav-text text-[#5C5C5C] hover:text-[#D40000] transition-colors duration-200"
+                  className="nav-text text-[#5C5C5C] hover:text-[#6E1423] transition-colors duration-200"
                 >
                   {link.label}
                 </Link>
@@ -80,7 +80,7 @@ export default function Navbar() {
                 href={WHATSAPP_BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#D40000] text-white text-[13px] font-medium tracking-wide px-5 py-2.5 rounded-[2px] hover:bg-[#B30000] transition-colors duration-200"
+                className="bg-[#6E1423] text-white text-[13px] font-medium tracking-wide px-5 py-2.5 rounded-[2px] hover:bg-[#591019] transition-colors duration-200"
               >
                 Book Appointment →
               </a>
@@ -89,7 +89,7 @@ export default function Navbar() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setIsOpen(true)}
-              className="lg:hidden p-2 text-[#1A1A1A] hover:text-[#D40000] transition-colors"
+              className="lg:hidden p-2 text-[#1A1A1A] hover:text-[#6E1423] transition-colors"
               aria-label="Open menu"
             >
               <Menu size={22} />
@@ -109,16 +109,16 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between px-6 h-16 border-b border-[#E8E4DC]">
             <Link href="/" className="flex flex-col leading-none" onClick={() => setIsOpen(false)}>
-              <span className="heading-font text-[22px] font-semibold text-[#1A1A1A] leading-none" style={{ fontFamily: 'var(--font-heading)' }}>
-                Elite Plus
+              <span className="heading-font text-[20px] font-semibold text-[#1A1A1A] leading-none" style={{ fontFamily: 'var(--font-heading)' }}>
+                Pinnacle
               </span>
-              <span className="text-[11px] tracking-[0.12em] uppercase text-[#5C5C5C] leading-none mt-0.5" style={{ fontFamily: 'var(--font-body)' }}>
-                Medical Centre
+              <span className="text-[10px] tracking-[0.1em] uppercase text-[#5C5C5C] leading-none mt-0.5" style={{ fontFamily: 'var(--font-body)' }}>
+                Healthcare & Eye Clinic
               </span>
             </Link>
             <button
               onClick={() => setIsOpen(false)}
-              className="p-2 text-[#1A1A1A] hover:text-[#D40000] transition-colors"
+              className="p-2 text-[#1A1A1A] hover:text-[#6E1423] transition-colors"
               aria-label="Close menu"
             >
               <X size={22} />
@@ -135,7 +135,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-[28px] font-light text-[#1A1A1A] hover:text-[#D40000] transition-colors duration-200"
+                  className="text-[28px] font-light text-[#1A1A1A] hover:text-[#6E1423] transition-colors duration-200"
                   style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   {link.label}
@@ -149,13 +149,13 @@ export default function Navbar() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.4 }}
-              className="mt-4 bg-[#D40000] text-white text-center py-4 rounded-[2px] text-[15px] font-medium tracking-wide"
+              className="mt-4 bg-[#6E1423] text-white text-center py-4 rounded-[2px] text-[15px] font-medium tracking-wide"
             >
               Book Appointment →
             </motion.a>
           </nav>
           <div className="px-6 pb-8 text-[#9A9A9A] text-[12px] leading-relaxed">
-            Mon – Sat: 8:00 AM – 1:30 PM & 6:00 PM – 9:30 PM <br />
+            Mon – Sat: 10 AM – 3 PM & 7 PM – 10 PM <br />
             Sunday: Closed &middot; +91 91004 04352
           </div>
         </motion.div>

@@ -29,7 +29,7 @@ export default function Hero() {
     <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-white">
       {/* Background decoration */}
       <div className="absolute inset-0 hero-grid-pattern pointer-events-none opacity-40" />
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#008B8B]/5 to-transparent pointer-events-none" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#1E3D23]/5 to-transparent pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 w-full py-20 lg:py-32">
         <div className="grid lg:grid-cols-1 gap-12 items-center text-center">
@@ -41,7 +41,7 @@ export default function Hero() {
             {/* Location Label */}
             <motion.span
               variants={item}
-              className="inline-block text-[12px] tracking-[0.2em] font-bold text-[#008B8B] uppercase mb-6"
+              className="inline-block text-[12px] tracking-[0.2em] font-bold text-[#1E3D23] uppercase mb-6"
             >
               Banjara Hills, Hyderabad
             </motion.span>
@@ -52,23 +52,31 @@ export default function Hero() {
               className="heading-font text-[#1A1A1A] mb-6 font-black"
               style={{
                 fontFamily: 'var(--font-heading)',
-                fontSize: 'clamp(44px, 7vw, 84px)',
+                fontSize: 'clamp(40px, 6.5vw, 76px)',
                 lineHeight: '1.05',
                 letterSpacing: '-0.03em',
                 textTransform: 'uppercase',
               }}
             >
-              Elite Plus <br className="hidden md:block" />
-              <span className="text-[#D40000]">Medical</span> Centre
+              <span className="text-[#6E1423]">Pinnacle</span> Healthcare <br className="hidden md:block" />
+              and Eye Clinic
             </motion.h1>
 
             {/* Tagline */}
             <motion.p
               variants={item}
-              className="heading-font text-[20px] lg:text-[28px] text-[#4B5563] mb-8 font-light italic"
+              className="heading-font text-[20px] lg:text-[28px] text-[#4B5563] mb-2 font-light italic"
               style={{ fontFamily: 'var(--font-heading)' }}
             >
-              Elite Care, Elevated Trust.
+              Excellence In Health & Vision
+            </motion.p>
+
+            {/* Subtitle */}
+            <motion.p
+              variants={item}
+              className="text-[13px] tracking-[0.08em] uppercase text-[#9A9A9A] mb-8"
+            >
+              Unit of Elite Plus Medical Centre
             </motion.p>
 
             {/* Body text */}
@@ -88,13 +96,13 @@ export default function Hero() {
                 href={WHATSAPP_BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto bg-[#D40000] text-white px-10 py-5 rounded-[4px] text-[15px] font-semibold hover:bg-[#B30000] transition-all duration-300 shadow-md flex items-center justify-center gap-2"
+                className="w-full sm:w-auto bg-[#6E1423] text-white px-10 py-5 rounded-[4px] text-[15px] font-semibold hover:bg-[#591019] transition-all duration-300 shadow-md flex items-center justify-center gap-2"
               >
                 Book on WhatsApp →
               </a>
               <Link
                 href="/about"
-                className="w-full sm:w-auto px-10 py-5 border-2 border-[#008B8B] text-[#008B8B] rounded-[4px] text-[15px] font-semibold hover:bg-[#008B8B] hover:text-white transition-all duration-300 flex items-center justify-center"
+                className="w-full sm:w-auto px-10 py-5 border-2 border-[#1E3D23] text-[#1E3D23] rounded-[4px] text-[15px] font-semibold hover:bg-[#1E3D23] hover:text-white transition-all duration-300 flex items-center justify-center"
               >
                 Learn More
               </Link>

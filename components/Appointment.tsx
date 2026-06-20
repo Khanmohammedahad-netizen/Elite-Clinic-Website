@@ -39,20 +39,20 @@ export default function Appointment() {
             <div className="space-y-8">
               <div className="flex gap-4">
                 <div className="bg-white w-10 h-10 rounded-full flex items-center justify-center border border-[#E8E4DC] shrink-0">
-                  <MapPin className="text-[#008B8B]" size={18} />
+                  <MapPin className="text-[#1E3D23]" size={18} />
                 </div>
                 <div>
                   <p className="font-bold text-[#1A1A1A] mb-1">Clinic Address</p>
                   <p className="text-[#6B7280] text-[15px] leading-relaxed">
-                    Banjara Hills Rd No. 10, Zahara Nagar, <br />
-                    Hyderabad, Telangana 500034
+                    # 8-2-602/21, Road No 10, Banjara Hills, <br />
+                    Hyderabad - 500034
                   </p>
                 </div>
               </div>
 
               <div className="flex gap-4">
                 <div className="bg-white w-10 h-10 rounded-full flex items-center justify-center border border-[#E8E4DC] shrink-0">
-                  <Phone className="text-[#008B8B]" size={18} />
+                  <Phone className="text-[#1E3D23]" size={18} />
                 </div>
                 <div>
                   <p className="font-bold text-[#1A1A1A] mb-1">Call Us Directly</p>
@@ -62,13 +62,13 @@ export default function Appointment() {
 
               <div className="flex gap-4">
                 <div className="bg-white w-10 h-10 rounded-full flex items-center justify-center border border-[#E8E4DC] shrink-0">
-                  <Clock className="text-[#008B8B]" size={18} />
+                  <Clock className="text-[#1E3D23]" size={18} />
                 </div>
                 <div>
                   <p className="font-bold text-[#1A1A1A] mb-1">Clinic Timings</p>
                   <div className="text-[#6B7280] text-[15px] leading-relaxed">
-                    Mon – Sat: 8:00 AM – 1:30 PM &amp; 6:00 PM – 9:30 PM <br />
-                    <span className="text-[#D40000] font-medium">Sunday: Closed</span>
+                    Mon – Sat: 10 AM – 3 PM &amp; 7 PM – 10 PM <br />
+                    <span className="text-[#6E1423] font-medium">Sunday: Closed</span>
                   </div>
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default function Appointment() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white font-bold px-10 py-5 rounded-[4px] text-[16px] hover:bg-[#20BE5A] transition-all duration-300 shadow-lg hover:shadow-xl w-full"
               >
-                Message Dr. Adnan & Maimoona →
+                Message Dr. Adnan Aziz & Dr. Maimoona →
               </a>
               <p className="mt-6 text-[12px] text-[#9A9A9A] uppercase tracking-widest font-medium">
                 No forms. No waiting. Direct care.

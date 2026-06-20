@@ -30,8 +30,8 @@ export default function PinnacleEyeCarePage() {
             className="text-center max-w-3xl mx-auto"
           >
             <span className="label-text">Pinnacle Eye Care</span>
-            <p className="text-[14px] font-bold text-[#D40000] uppercase tracking-[0.1em] mt-2 mb-4">
-              A practice of Elite Plus Medical Centre
+            <p className="text-[14px] font-bold text-[#6E1423] uppercase tracking-[0.1em] mt-2 mb-4">
+              A unit of Elite Plus Medical Centre
             </p>
             <h1
               className="heading-font mt-4 mb-8 text-[#1A1A1A]"
@@ -45,7 +45,7 @@ export default function PinnacleEyeCarePage() {
               Expert Eye Care in the Heart of Banjara Hills
             </h1>
             <p className="text-[#6B7280] text-[18px] leading-relaxed">
-              Pinnacle Eye Care is the dedicated ophthalmology practice within Elite Plus Medical Centre, led by Dr. Maimoona. From routine eye examinations to advanced surgical procedures, we provide comprehensive care for your vision.
+              Pinnacle Eye Care is the dedicated ophthalmology practice within Pinnacle Healthcare and Eye Clinic, a unit of Elite Plus Medical Centre, led by Dr. Maimoona Fareed. From routine eye examinations to advanced surgical procedures, we provide comprehensive care for your vision.
             </p>
           </motion.div>
         </div>
@@ -54,7 +54,7 @@ export default function PinnacleEyeCarePage() {
       {/* Doctor Card */}
       <section className="py-24 bg-[#F5F5F5]">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <DoctorProfileCard doctor={maimoona} accentColor="#D40000" />
+          <DoctorProfileCard doctor={maimoona} accentColor="#6E1423" />
         </div>
       </section>
 
@@ -70,8 +70,8 @@ export default function PinnacleEyeCarePage() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {services.map((service, i) => (
-              <div key={i} className="flex gap-4 p-6 rounded-[4px] bg-[#F5F5F5] border border-transparent hover:border-[#D40000] transition-all">
-                <CheckCircle2 className="text-[#D40000] flex-shrink-0" size={20} />
+              <div key={i} className="flex gap-4 p-6 rounded-[4px] bg-[#F5F5F5] border border-transparent hover:border-[#6E1423] transition-all">
+                <CheckCircle2 className="text-[#6E1423] flex-shrink-0" size={20} />
                 <div>
                   <h3 className="font-bold text-[#1A1A1A] mb-2">{service.title}</h3>
                   <p className="text-[#6B7280] text-[14px] leading-relaxed">{service.desc}</p>
@@ -83,16 +83,16 @@ export default function PinnacleEyeCarePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#D40000]">
+      <section className="py-24 bg-[#6E1423]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="heading-font text-[32px] text-white mb-8" style={{ fontFamily: 'var(--font-heading)' }}>
-            Book an eye consultation with Dr. Maimoona
+            Book an eye consultation with Dr. Maimoona Fareed
           </h2>
           <a
             href={WHATSAPP_BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-white text-[#D40000] font-bold px-10 py-5 rounded-[4px] text-[16px] hover:bg-[#F5F5F5] transition-all duration-200 shadow-xl"
+            className="inline-flex items-center justify-center gap-2 bg-white text-[#6E1423] font-bold px-10 py-5 rounded-[4px] text-[16px] hover:bg-[#F5F5F5] transition-all duration-200 shadow-xl"
           >
             Book on WhatsApp →
           </a>

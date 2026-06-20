@@ -9,12 +9,12 @@ import { fadeUp, noMotion, viewportOptions } from '@/lib/animations'
 const REVIEWS = [
   {
     id: 1,
-    quote: "I really appreciate how patient and thorough Dr. Adnan is. I always leave feeling informed and confident in my care. I trust him completely.",
+    quote: "I really appreciate how patient and thorough Dr. Adnan Aziz is. I always leave feeling informed and confident in my care. I trust him completely.",
     author: "Verified Google Review",
   },
   {
     id: 2,
-    quote: "Excellent doctors and facilities. Dr. Adnan listens and handles patients with empathy. Only necessary tests and treatments are prescribed!",
+    quote: "Excellent doctors and facilities. Dr. Adnan Aziz listens and handles patients with empathy. Only necessary tests and treatments are prescribed!",
     author: "Verified Google Review",
   },
   {
@@ -72,7 +72,7 @@ export default function Testimonials() {
           {REVIEWS.map((review) => (
             <div
               key={review.id}
-              className="bg-[#F5F5F5] border-l-4 border-l-[#D40000] rounded-r-lg p-8 h-full"
+              className="bg-[#F5F5F5] border-l-4 border-l-[#6E1423] rounded-r-lg p-8 h-full"
             >
               <div className="flex gap-1 mb-5">
                 {[...Array(5)].map((_, i) => (
@@ -101,7 +101,7 @@ export default function Testimonials() {
               {REVIEWS.map((review) => (
                 <motion.div
                   key={review.id}
-                  className="bg-[#F5F5F5] border-l-4 border-l-[#D40000] rounded-r-[8px] p-8 w-[85vw] max-w-[320px] flex-shrink-0"
+                  className="bg-[#F5F5F5] border-l-4 border-l-[#6E1423] rounded-r-[8px] p-8 w-[85vw] max-w-[320px] flex-shrink-0"
                 >
                   <div className="flex gap-1 mb-5">
                     {[...Array(5)].map((_, i) => (
@@ -135,13 +135,13 @@ export default function Testimonials() {
               className="heading-font text-[28px] lg:text-[36px] text-[#1A1A1A] mb-8"
               style={{ fontFamily: 'var(--font-heading)' }}
             >
-              Join 10,000+ patients who trust Elite Plus Medical Centre
+              Join 10,000+ patients who trust Pinnacle Healthcare and Eye Clinic
             </h3>
             <a
               href={WHATSAPP_BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#D40000] text-white font-medium px-8 py-4 rounded-[2px] text-[15px] hover:bg-[#B30000] transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2 bg-[#6E1423] text-white font-medium px-8 py-4 rounded-[2px] text-[15px] hover:bg-[#591019] transition-all duration-200"
             >
               Book Your Appointment →
             </a>

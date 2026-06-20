@@ -16,10 +16,10 @@ const config: Config = {
         'text-primary': '#1A1A1A',
         'text-secondary': '#5C5C5C',
         'text-muted': '#9A9A9A',
-        'primary': '#D40000',
-        'secondary': '#008B8B',
+        'primary': '#6E1423',
+        'secondary': '#1E3D23',
         'accent-dark': '#1C1C1C',
-        'accent-green': '#2D6A4F',
+        'accent-green': '#1E3D23',
         'whatsapp': '#25D366',
       },
       fontFamily: {
