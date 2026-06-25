@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion, type Variants } from 'framer-motion'
 import { Star } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { WHATSAPP_BOOKING_URL } from '@/lib/whatsapp'
 
@@ -31,12 +32,13 @@ export default function Hero() {
       <div className="absolute inset-0 hero-grid-pattern pointer-events-none opacity-40" />
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#1E3D23]/5 to-transparent pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 w-full py-20 lg:py-32">
-        <div className="grid lg:grid-cols-1 gap-12 items-center text-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 w-full py-20 lg:py-28">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <motion.div
             initial="hidden"
             animate="visible"
             variants={container}
+            className="text-center lg:text-left"
           >
             {/* Location Label */}
             <motion.span
@@ -52,7 +54,7 @@ export default function Hero() {
               className="heading-font text-[#1A1A1A] mb-6 font-black"
               style={{
                 fontFamily: 'var(--font-heading)',
-                fontSize: 'clamp(40px, 6.5vw, 76px)',
+                fontSize: 'clamp(40px, 6.5vw, 68px)',
                 lineHeight: '1.05',
                 letterSpacing: '-0.03em',
                 textTransform: 'uppercase',
@@ -65,7 +67,7 @@ export default function Hero() {
             {/* Tagline */}
             <motion.p
               variants={item}
-              className="heading-font text-[20px] lg:text-[28px] text-[#4B5563] mb-2 font-light italic"
+              className="heading-font text-[20px] lg:text-[26px] text-[#4B5563] mb-2 font-light italic"
               style={{ fontFamily: 'var(--font-heading)' }}
             >
               Excellence In Health & Vision
@@ -82,7 +84,7 @@ export default function Hero() {
             {/* Body text */}
             <motion.p
               variants={item}
-              className="text-[#6B7280] text-[17px] lg:text-[19px] max-w-2xl mx-auto leading-relaxed mb-10"
+              className="text-[#6B7280] text-[17px] lg:text-[19px] max-w-xl mx-auto lg:mx-0 leading-relaxed mb-10"
             >
               Your trusted neighbourhood clinic for general medicine, diabetes care, and advanced eye treatments — all under one roof.
             </motion.p>
@@ -90,7 +92,7 @@ export default function Hero() {
             {/* CTAs */}
             <motion.div
               variants={item}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
+              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12"
             >
               <a
                 href={WHATSAPP_BOOKING_URL}
@@ -111,7 +113,7 @@ export default function Hero() {
             {/* Trust Badge */}
             <motion.div
               variants={item}
-              className="flex items-center justify-center gap-6 py-6 border-t border-[#E8E4DC] max-w-sm mx-auto"
+              className="flex items-center justify-center lg:justify-start gap-6 py-6 border-t border-[#E8E4DC] max-w-sm mx-auto lg:mx-0"
             >
               <div className="flex items-center gap-2">
                 <div className="flex gap-0.5">
@@ -126,6 +128,42 @@ export default function Hero() {
                 <span className="text-[14px] text-[#1A1A1A] font-bold uppercase tracking-wider">61+ Reviews</span>
               </div>
             </motion.div>
+          </motion.div>
+
+          {/* Image collage */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
+            className="relative hidden lg:block"
+          >
+            <div className="relative aspect-[4/5] rounded-[8px] overflow-hidden shadow-doctor">
+              <Image
+                src="/images/clinic/eye-exam.jpg"
+                alt="Dr. Maimoona Fareed examining a patient at Pinnacle Eye Care"
+                fill
+                priority
+                sizes="(max-width: 1024px) 0px, 40vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-8 -left-8 w-44 aspect-square rounded-[8px] overflow-hidden shadow-doctor border-4 border-white">
+              <Image
+                src="/images/clinic/cataract-surgery.jpg"
+                alt="Cataract surgery in progress at Pinnacle Healthcare and Eye Clinic"
+                fill
+                sizes="176px"
+                className="object-cover"
+              />
+            </div>
+            <div className="absolute -top-6 -right-6 bg-white rounded-[8px] shadow-doctor px-5 py-4 flex items-center gap-3">
+              <div className="flex gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={12} fill="#F5A623" color="#F5A623" />
+                ))}
+              </div>
+              <span className="text-[12px] text-[#1A1A1A] font-bold whitespace-nowrap">4.9 Rated Care</span>
+            </div>
           </motion.div>
         </div>
       </div>

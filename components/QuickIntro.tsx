@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from 'framer-motion'
 import { Stethoscope, Eye } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { fadeUp, noMotion, viewportOptions, staggerContainer } from '@/lib/animations'
 
@@ -46,9 +47,19 @@ export default function QuickIntro() {
           {/* General Medicine Card */}
           <motion.div
             variants={reduce ? noMotion : fadeUp}
-            className="group relative bg-[#F5F5F5] p-10 rounded-[4px] border border-transparent hover:border-[#1E3D23] transition-all duration-300"
+            className="group relative bg-[#F5F5F5] rounded-[4px] border border-transparent hover:border-[#1E3D23] transition-all duration-300 overflow-hidden"
           >
-            <div className="bg-white w-14 h-14 rounded-full flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300">
+            <div className="relative w-full aspect-[16/9] overflow-hidden">
+              <Image
+                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80"
+                alt="General physician consultation"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="p-10">
+            <div className="bg-white w-14 h-14 rounded-full flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300 -mt-[52px] relative z-10 border-4 border-[#F5F5F5]">
               <Stethoscope className="text-[#1E3D23]" size={28} />
             </div>
             <h3 className="heading-font text-[24px] text-[#1A1A1A] mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
@@ -67,14 +78,25 @@ export default function QuickIntro() {
             >
               Learn more <span className="ml-1">→</span>
             </Link>
+            </div>
           </motion.div>
 
           {/* Eye Care Card */}
           <motion.div
             variants={reduce ? noMotion : fadeUp}
-            className="group relative bg-[#F5F5F5] p-10 rounded-[4px] border border-transparent hover:border-[#6E1423] transition-all duration-300"
+            className="group relative bg-[#F5F5F5] rounded-[4px] border border-transparent hover:border-[#6E1423] transition-all duration-300 overflow-hidden"
           >
-            <div className="bg-white w-14 h-14 rounded-full flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300">
+            <div className="relative w-full aspect-[16/9] overflow-hidden">
+              <Image
+                src="/images/clinic/lasik-procedure.jpg"
+                alt="LASIK procedure at Pinnacle Eye Care"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="p-10">
+            <div className="bg-white w-14 h-14 rounded-full flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300 -mt-[52px] relative z-10 border-4 border-[#F5F5F5]">
               <Eye className="text-[#6E1423]" size={28} />
             </div>
             <h3 className="heading-font text-[24px] text-[#1A1A1A] mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
@@ -93,6 +115,7 @@ export default function QuickIntro() {
             >
               Learn more <span className="ml-1">→</span>
             </Link>
+            </div>
           </motion.div>
         </motion.div>
       </div>

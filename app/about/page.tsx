@@ -3,6 +3,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { fadeUp, noMotion } from '@/lib/animations'
 import Doctors from '@/components/Doctors'
+import Image from 'next/image'
 import { MapPin, Phone, Clock } from 'lucide-react'
 
 export default function AboutPage() {
@@ -41,13 +42,44 @@ export default function AboutPage() {
       {/* Philosophy */}
       <section className="py-24 bg-[#F5F5F5]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="heading-font text-[32px] text-[#1A1A1A] mb-8" style={{ fontFamily: 'var(--font-heading)' }}>
-              Our Approach to Care
-            </h2>
-            <p className="text-[#6B7280] text-[17px] leading-relaxed mb-8">
-              We hold a firm commitment to evidence-based medicine: no unnecessary tests, no excessive prescriptions. Our physicians prescribe only what is clinically indicated, explained in plain language.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="text-center lg:text-left">
+              <h2 className="heading-font text-[32px] text-[#1A1A1A] mb-8" style={{ fontFamily: 'var(--font-heading)' }}>
+                Our Approach to Care
+              </h2>
+              <p className="text-[#6B7280] text-[17px] leading-relaxed mb-8">
+                We hold a firm commitment to evidence-based medicine: no unnecessary tests, no excessive prescriptions. Our physicians prescribe only what is clinically indicated, explained in plain language.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative aspect-[3/4] rounded-[8px] overflow-hidden shadow-card row-span-2">
+                <Image
+                  src="/images/clinic/cataract-surgery.jpg"
+                  alt="Cataract surgery in progress at Pinnacle Healthcare and Eye Clinic"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-square rounded-[8px] overflow-hidden shadow-card">
+                <Image
+                  src="/images/clinic/conference-talk.jpg"
+                  alt="Dr. Maimoona Fareed presenting at Ekashila Eye Con 2025"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-square rounded-[8px] overflow-hidden shadow-card">
+                <Image
+                  src="/images/clinic/award-ceremony.jpg"
+                  alt="Dr. Maimoona Fareed receiving a certificate of appreciation"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

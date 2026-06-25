@@ -5,6 +5,7 @@ import { fadeUp, noMotion } from '@/lib/animations'
 import { DOCTORS } from '@/lib/data'
 import DoctorProfileCard from '@/components/DoctorProfileCard'
 import { WHATSAPP_BOOKING_URL } from '@/lib/whatsapp'
+import Image from 'next/image'
 import { CheckCircle2 } from 'lucide-react'
 
 export default function PinnacleEyeCarePage() {
@@ -12,10 +13,10 @@ export default function PinnacleEyeCarePage() {
   const maimoona = DOCTORS.find(d => d.id === 'maimoona')!
 
   const services = [
-    { title: 'LASIK Surgery', desc: 'Laser vision correction for myopia, hyperopia, and astigmatism.' },
-    { title: 'Cataract Surgery', desc: 'Surgical removal and lens replacement to restore clear vision.' },
-    { title: 'Cornea Care', desc: 'Management of corneal conditions including infections and keratoconus.' },
-    { title: 'Comprehensive Eye Examinations', desc: 'Complete eye health evaluations, prescription assessments, and vision screening.' },
+    { title: 'LASIK Surgery', desc: 'Laser vision correction for myopia, hyperopia, and astigmatism.', image: '/images/clinic/lasik-procedure.jpg' },
+    { title: 'Cataract Surgery', desc: 'Surgical removal and lens replacement to restore clear vision.', image: '/images/clinic/cataract-surgery.jpg' },
+    { title: 'Cornea Care', desc: 'Management of corneal conditions including infections and keratoconus.', image: '/images/clinic/yag-laser.jpg' },
+    { title: 'Comprehensive Eye Examinations', desc: 'Complete eye health evaluations, prescription assessments, and vision screening.', image: '/images/clinic/eye-exam.jpg' },
   ]
 
   return (
@@ -48,6 +49,18 @@ export default function PinnacleEyeCarePage() {
               Pinnacle Eye Care is the dedicated ophthalmology practice within Pinnacle Healthcare and Eye Clinic, a unit of Elite Plus Medical Centre, led by Dr. Maimoona Fareed. From routine eye examinations to advanced surgical procedures, we provide comprehensive care for your vision.
             </p>
           </motion.div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={reduce ? noMotion : fadeUp}
+            className="grid grid-cols-3 gap-4 mt-12 max-w-4xl mx-auto"
+          >
+            {['/images/clinic/cataract-surgery.jpg', '/images/clinic/lasik-procedure.jpg', '/images/clinic/yag-laser.jpg'].map((src) => (
+              <div key={src} className="relative aspect-square rounded-[8px] overflow-hidden shadow-card">
+                <Image src={src} alt="Eye care procedure at Pinnacle Eye Care" fill sizes="33vw" className="object-cover" />
+              </div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
@@ -70,10 +83,15 @@ export default function PinnacleEyeCarePage() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {services.map((service, i) => (
-              <div key={i} className="flex gap-4 p-6 rounded-[4px] bg-[#F5F5F5] border border-transparent hover:border-[#6E1423] transition-all">
-                <CheckCircle2 className="text-[#6E1423] flex-shrink-0" size={20} />
+              <div key={i} className="flex gap-4 p-6 rounded-[4px] bg-[#F5F5F5] border border-transparent hover:border-[#6E1423] transition-all overflow-hidden">
+                <div className="relative w-16 h-16 rounded-[4px] overflow-hidden flex-shrink-0">
+                  <Image src={service.image} alt={service.title} fill sizes="64px" className="object-cover" />
+                </div>
                 <div>
-                  <h3 className="font-bold text-[#1A1A1A] mb-2">{service.title}</h3>
+                  <h3 className="font-bold text-[#1A1A1A] mb-2 flex items-center gap-2">
+                    <CheckCircle2 className="text-[#6E1423] flex-shrink-0" size={16} />
+                    {service.title}
+                  </h3>
                   <p className="text-[#6B7280] text-[14px] leading-relaxed">{service.desc}</p>
                 </div>
               </div>

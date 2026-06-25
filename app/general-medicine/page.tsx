@@ -5,6 +5,7 @@ import { fadeUp, noMotion } from '@/lib/animations'
 import { DOCTORS } from '@/lib/data'
 import DoctorProfileCard from '@/components/DoctorProfileCard'
 import { WHATSAPP_BOOKING_URL } from '@/lib/whatsapp'
+import Image from 'next/image'
 import { CheckCircle2 } from 'lucide-react'
 
 export default function GeneralMedicinePage() {
@@ -44,6 +45,20 @@ export default function GeneralMedicinePage() {
             <p className="text-[#6B7280] text-[18px] leading-relaxed">
               From routine check-ups to managing chronic conditions like diabetes and hypertension, Dr. Adnan Aziz provides thorough, evidence-based medical care with a focus on clear communication and patient understanding.
             </p>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={reduce ? noMotion : fadeUp}
+            className="relative mt-12 aspect-[16/6] rounded-[8px] overflow-hidden shadow-card max-w-4xl mx-auto"
+          >
+            <Image
+              src="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?auto=format&fit=crop&w=1600&q=80"
+              alt="General physician consultation room"
+              fill
+              sizes="(max-width: 1024px) 100vw, 1024px"
+              className="object-cover"
+            />
           </motion.div>
         </div>
       </section>
