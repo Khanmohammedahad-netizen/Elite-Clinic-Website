@@ -139,8 +139,8 @@ export default function Hero() {
           >
             <div className="relative aspect-[4/5] rounded-[8px] overflow-hidden shadow-doctor">
               <Image
-                src="/images/clinic/eye-exam.jpg"
-                alt="Dr. Maimoona Fareed examining a patient at Pinnacle Eye Care"
+                src="/images/clinic/ot-wide.jpg"
+                alt="Dr. Maimoona Fareed performing eye surgery at Pinnacle Eye Care's operating theatre"
                 fill
                 priority
                 sizes="(max-width: 1024px) 0px, 40vw"

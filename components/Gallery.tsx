@@ -6,21 +6,21 @@ import { fadeUp, noMotion, viewportOptions, staggerContainer } from '@/lib/anima
 
 const PHOTOS = [
   {
+    src: '/images/clinic/ot-wide.jpg',
+    alt: 'Operating theatre at Pinnacle Healthcare and Eye Clinic during eye surgery',
+    caption: 'Inside Our Operating Theatre',
+    span: 'lg:row-span-2',
+  },
+  {
     src: '/images/clinic/cataract-surgery.jpg',
     alt: 'Cataract surgery in progress at Pinnacle Healthcare and Eye Clinic',
     caption: 'Cataract Surgery in Progress',
-    span: 'lg:row-span-2',
+    span: '',
   },
   {
     src: '/images/clinic/lasik-procedure.jpg',
     alt: 'LASIK procedure using Schwind laser technology',
     caption: 'LASIK Vision Correction',
-    span: '',
-  },
-  {
-    src: '/images/clinic/eye-exam.jpg',
-    alt: 'Dr. Maimoona Fareed conducting a slit-lamp eye examination',
-    caption: 'Detailed Eye Examination',
     span: '',
   },
   {
