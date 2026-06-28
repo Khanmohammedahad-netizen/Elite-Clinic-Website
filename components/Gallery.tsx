@@ -25,20 +25,14 @@ const PHOTOS = [
   },
   {
     src: '/images/clinic/yag-laser.jpg',
-    alt: 'YAG laser treatment at Pinnacle Eye Care',
-    caption: 'YAG Laser Treatment',
+    alt: 'Keratoconus management at Pinnacle Eye Care',
+    caption: 'Keratoconus Management',
     span: '',
   },
   {
     src: '/images/clinic/conference-talk.jpg',
     alt: 'Dr. Maimoona Fareed presenting at the 10th Annual State Ophthalmology Conference',
     caption: 'Sharing Expertise at Ekashila Eye Con 2025',
-    span: '',
-  },
-  {
-    src: '/images/clinic/award-ceremony.jpg',
-    alt: 'Dr. Maimoona Fareed receiving a certificate of appreciation',
-    caption: 'Recognized for Excellence in Ophthalmology',
     span: '',
   },
 ]

@@ -43,7 +43,7 @@ export default function PinnacleEyeCarePage() {
                 letterSpacing: '-0.02em',
               }}
             >
-              Expert Eye Care in the Heart of Banjara Hills
+              Expert Eye Care in Banjara Hills
             </h1>
             <p className="text-[#6B7280] text-[18px] leading-relaxed">
               Pinnacle Eye Care is the dedicated ophthalmology practice within Pinnacle Healthcare and Eye Clinic, a unit of Elite Plus Medical Centre, led by Dr. Maimoona Fareed. From routine eye examinations to advanced surgical procedures, we provide comprehensive care for your vision.
