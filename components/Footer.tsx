@@ -107,7 +107,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-[#333333] pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
           <p className="text-[13px] text-[#7A7A7A]">
-            &copy; {new Date().getFullYear()} Pinnacle Healthcare and Eye Clinic — Unit of Elite Plus Medical Centre. Banjara Hills, Hyderabad.
+            &copy; {new Date().getFullYear()} Pinnacle Healthcare and Eye Clinic. Unit of Elite Plus Medical Centre. Banjara Hills, Hyderabad.
           </p>
           <p className="text-[11px] text-[#7A7A7A] uppercase tracking-wider">
             Developed by <a href="#" className="hover:text-[#6E1423] transition-colors">MAK Software Solutions</a>

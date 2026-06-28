@@ -62,7 +62,7 @@ export default function Gallery() {
             A Look at Our Care in Action
           </h2>
           <p className="mt-6 text-[#6B7280] max-w-2xl mx-auto text-[17px] leading-relaxed">
-            From the operating theatre to the conference podium — real moments from our doctors and our practice.
+            From the operating theatre to the conference podium, real moments from our doctors and our practice.
           </p>
         </motion.div>
       </div>

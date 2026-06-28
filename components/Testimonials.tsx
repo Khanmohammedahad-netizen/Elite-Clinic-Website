@@ -85,7 +85,7 @@ export default function Testimonials() {
               >
                 &ldquo;{review.quote}&rdquo;
               </p>
-              <p className="text-[13px] text-[#9A9A9A] font-medium">— {review.author} ★★★★★</p>
+              <p className="text-[13px] text-[#9A9A9A] font-medium">{review.author} ★★★★★</p>
             </div>
           ))}
         </div>
@@ -114,7 +114,7 @@ export default function Testimonials() {
                   >
                     &ldquo;{review.quote}&rdquo;
                   </p>
-                  <p className="text-[13px] text-[#9A9A9A] font-medium">— {review.author} ★★★★★</p>
+                  <p className="text-[13px] text-[#9A9A9A] font-medium">{review.author} ★★★★★</p>
                 </motion.div>
               ))}
             </motion.div>

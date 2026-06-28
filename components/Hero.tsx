@@ -86,7 +86,7 @@ export default function Hero() {
               variants={item}
               className="text-[#6B7280] text-[17px] lg:text-[19px] max-w-xl mx-auto lg:mx-0 leading-relaxed mb-10"
             >
-              Your trusted neighbourhood clinic for general medicine, diabetes care, and advanced eye treatments — all under one roof.
+              Your trusted neighbourhood clinic for general medicine, diabetes care, and advanced eye treatments, all under one roof.
             </motion.p>
 
             {/* CTAs */}

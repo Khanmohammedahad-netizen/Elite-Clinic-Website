@@ -33,7 +33,7 @@ export default function AboutPage() {
               Where Every Patient Leaves Informed and Confident
             </h1>
             <p className="text-[#6B7280] text-[18px] leading-relaxed">
-              At Pinnacle Healthcare and Eye Clinic, a unit of Elite Plus Medical Centre, we believe that great healthcare begins with great listening. Every consultation is unhurried — we take the time to understand not just your symptoms, but your life, your concerns, and your goals.
+              At Pinnacle Healthcare and Eye Clinic, a unit of Elite Plus Medical Centre, we believe that great healthcare begins with great listening. Every consultation is unhurried; we take the time to understand not just your symptoms, but your life, your concerns, and your goals.
             </p>
           </motion.div>
         </div>
