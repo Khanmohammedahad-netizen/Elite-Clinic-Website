@@ -72,8 +72,8 @@ export default function AboutPage() {
               </div>
               <div className="relative aspect-square rounded-[8px] overflow-hidden shadow-card">
                 <Image
-                  src="/images/clinic/award-ceremony.jpg"
-                  alt="Dr. Maimoona Fareed receiving a certificate of appreciation"
+                  src="/images/clinic/lasik-procedure.jpg"
+                  alt="LASIK procedure at Pinnacle Eye Care"
                   fill
                   sizes="(max-width: 1024px) 50vw, 25vw"
                   className="object-cover"
